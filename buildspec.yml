@@ -10,4 +10,5 @@ phases:
       - dotnet publish -c release -o ./build_output DemoAPI/DemoAPI.csproj
 artifacts:
   files:
-    - build_output/**/*
+    - '**/*'
+  base-directory: build_output  
